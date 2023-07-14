@@ -8,4 +8,4 @@ document.addEventListener('DOMContentLoaded', function() {
     calendar.render();
   });
 
-  var mealSelector = function
+var mealSelector = function
