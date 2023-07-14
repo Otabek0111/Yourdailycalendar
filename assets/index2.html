@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+
     <title>Document</title>
 </head>
 <body>
-    <div class="dropdown">
-        <button>Click Me!</button>
-        <!-- "getElementbyID,  createElement append the data" -->
-        <div class="dropdown-content">
+    
+    <div class="split left">
+        <header>
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                    <div class="dropdown">
+                        <button>Click Me!</button>
+                        <!-- "getElementbyID,  createElement append the data" -->
+                        <div class="dropdown-content">
+                <a href="#about">About</a>
+              </div>
+        
+        </header>
+        <div class="centered">
+        </div>
+      </div>
+      
+      <div class="split right">
+          <div id='calendar'></div>
+        <div class="centered">
+        </div>
+      </div>
             <a href="#">15-minute-meals</a>
             <a href="#">3-ingredient-meals</a>
             <a href="#">5-ingredient-meals</a>
@@ -73,6 +95,6 @@
             
           
         </div>
-        <script src="./js/script2.js"
+        <script src="./js/script.js"></script>
 </body>
 </html>
