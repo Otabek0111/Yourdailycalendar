@@ -1,0 +1,47 @@
+body{
+    
+
+    /* background-image: url("/assets/images/backgroundTest.jpg"); */
+    background-size: cover;
+    background-position: center; 
+    background-image: url("https://images.unsplash.com/photo-1683463659082-593a05e6e190?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80");
+
+}
+
+
+#submitSection{
+    margin: 50px 300px;
+
+}   
+
+#submitBtn {
+    transition: box-shadow 0.5s ease;
+    color: black;
+
+}
+#submitBtn:hover {
+    color: white;
+    box-shadow: 0px 3px 4px 0px rgba(10, 3, 9, 0.7),
+    1px 3px 6px 0px rgba(10, 3, 9, 0.7),
+    2px 5px 10px 0px rgba(10, 3, 9, 0.7),
+    2px 5px 18px 0px rgba(10, 3, 9, 0.7);
+
+}
+
+#cancelBtn {
+    transition: box-shadow 0.5s ease;
+    color: black;
+
+}
+#cancelBtn:hover {
+    color: white;
+    box-shadow: 0px 3px 4px 0px rgba(10, 3, 9, 0.7),
+    1px 3px 6px 0px rgba(10, 3, 9, 0.7),
+    2px 5px 10px 0px rgba(10, 3, 9, 0.7),
+    2px 5px 18px 0px rgba(10, 3, 9, 0.7);
+
+}
+
+.hide{
+    display: none;
+}
