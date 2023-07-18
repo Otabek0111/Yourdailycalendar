@@ -4,19 +4,19 @@ let apiUrl ="https://api.spoonacular.com/recipes/complexSearch"
 let apiKey ="0821799963dc4a95ab208456cf22646c"
 let diet = document.getElementById("diet")
 let numOfRecipes =30
-let firstName = document.getElementById("first-name")
-let lasttName = document.getElementById("last-name")
-let submitBtn = document.getElementById("submitBtn")
-var submitSec = document.querySelector("#submitSection")
+let firstName = document.getElementById("first-name");
+let lasttName = document.getElementById("last-name");
+let submitBtn = document.getElementById("submitBtn");
+var submitSec = document.querySelector("#submitSection");
 
 let selectedDiet
 diet.addEventListener("change", function() {
   selectedDiet = this.value
-})
+});
 submitBtn.addEventListener("click", function(event) {
   console.log(event.target);
   event.preventDefault();
-  submitSec.setAttribute()
+  submitSec.setAttribute("class", "hide");
 
 
   fetch(apiUrl + "?apiKey=" + apiKey + "&diet=" + selectedDiet + "&number="+ numOfRecipes)
