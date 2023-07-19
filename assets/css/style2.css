@@ -45,3 +45,23 @@ body{
 .hide{
     display: none;
 }
+.fc {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.fc-event {
+    font-size: 0.8em;
+}
+
+.fc-daygrid-event {
+    height: auto;
+}
+
+.fc-event {
+    white-space: normal;
+    overflow: visible;
+}
+
+.fc-event:hover {
+    overflow: visible;
+}
