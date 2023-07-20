@@ -4,3 +4,20 @@ body{
     background-position: center; 
 
 }
+#logo {
+    height: 80px;
+}
+
+#startButton{
+    transition: box-shadow 0.5s ease;
+    color: rgb(95, 196, 255);
+}
+
+#startButton:hover {
+    color: white;
+    box-shadow: 0px 3px 4px 0px rgba(10, 3, 9, 0.7),
+    1px 3px 6px 0px rgba(10, 3, 9, 0.7),
+    2px 3px 6px 0px rgba(10, 3, 9, 0.7),
+    2px 3px 10px 0px rgba(10, 3, 9, 0.7);
+
+}
