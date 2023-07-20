@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(geoData => {
                 const latitude = geoData.data[0].latitude;
                 const longitude = geoData.data[0].longitude;
-
+                console.log(geoData);
 
                 // Now fetch the Storm Glass API using obtained longitude and latitute
                 fetch(`https://api.stormglass.io/v2/weather/point?lat=${latitude}&lng=${longitude}&params=airTemperature`, {
                         headers: {
-                            'Authorization': 'ea939a76-25ce-11ee-a654-0242ac130002-ea939b2a-25ce-11ee-a654-0242ac130002'
+                         'Authorization': 'ea939a76-25ce-11ee-a654-0242ac130002-ea939b2a-25ce-11ee-a654-0242ac130002'
                         }
                     })
                     .then(weatherResponse => weatherResponse.json())
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                                     // Add weather event only for the first 7 days
                                     if (checkBox.checked) {
-                                        if (index < 7) {
+                                        if (index < 1) {
                                             const currentHour = new Date().getHours();
                                             const dayWeather = weatherData.hours[currentHour]; // Assuming weatherData.hours[currentHour] holds the forecast for the current hour
                                             console.log(dayWeather);
