@@ -1,9 +1,12 @@
-let workOutApiUrl ='https://workout-planner1.p.rapidapi.com/?time=30&muscle=biceps&location=gym&equipment=dumbbells'
+var workout = document.getElementById("workout")
+var workoutTime = document.getElementById("time")
+var workoutMuscle = document.getElementById("muscle")
+var workoutLocation = document.getElementById("location")
+var workoutEquipment = document.getElementById("equipment")
 
-let workout = document.getElementById("workout")
-console.log(workout)
 
-fetch(workOutApiUrl, {
+
+fetch(`https://workout-planner1.p.rapidapi.com/?time=${workoutTime}&muscle=${workoutMuscle}&location=${workoutLocation}&equipment=${workoutEquipment}`, {
   method: 'GET',
   headers: {
     'Content-Type': 'application/json',
@@ -14,14 +17,15 @@ fetch(workOutApiUrl, {
   .then(response => response.json())
   .then(data => {
     // Handle the response data
-    console.log(data)
-    for (var i = 0; i <data.length; i++){
+    // console.log(data.Exercises[0].Exercise)
+    for (var i = 0; i < data.Exercises.length; i++){
       //create workout div element
-     var workOutEl = document.createElement("div");
+     var workOutEl = document.createElement("p");
      //Seting the text of the div element
-     workOutEl.textContent = data[i].Exercises.Exercises;
+     console.log(data.Exercises[i].Exercise);
      //Appending the dynamically generated html to the div associated with the workout
      workout.append(workOutEl);
+     workOutEl.textContent = data.Exercises[i].Exercise;
     }
     ;
   })
@@ -29,20 +33,3 @@ fetch(workOutApiUrl, {
     // Handle any errors
     console.error('Error:', error);
   });
-
-issueTitle.textContent = data[i].title;
-
-
-  // fetchButton.addEventListener('click', getApi);
-
-// var time = document.getElementById("time")
-// var muscle = document.getElementById("muscle")
-// var location = document.getElementById("location")
-// var equipment = document.getElementById("equipment")
-
-// let selectedWorkOut;
-// diet.addEventListener("change", function () {
-//   selectedWorkOut = this.value;
-// });
-
-

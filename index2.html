@@ -46,7 +46,15 @@
           <option value="Whole30">Whole30</option>
         </select>
         <div class="sm:col-span-3">
-          <label for="workouts" class="block text-sm font-medium leading-6 text-gray-900">Number of Workouts per Week</label>
+            <h2 class="font-bold mt-4 mb-1">Select your workout</h2>
+            <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="time" type="text" placeholder="How long is your workout? (minutes)">
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="muscle" type="text" placeholder="What muscle to focus on?">
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="location" type="text" placeholder="Where is your location?">
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="equipment" type="text" placeholder="What type of equipment?">
+      </select>
+  
+          <!-- <label for="workouts" class="block text-sm font-medium leading-6 text-gray-900">Number of Workouts per Week</label>
           <div class="mt-2">
               <select id="workouts" name="workouts" autocomplete="workouts" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                   <option value="1">1 workout</option>
@@ -57,7 +65,7 @@
                   <option value="6">6 workouts</option>
                   <option value="7">7 workouts</option>
               </select>
-          </div>
+          </div> -->
       </div>
 
 

@@ -13,7 +13,12 @@ var muscle = document.getElementById("muscle")
 var location = document.getElementById("location")
 var equipment = document.getElementById("equipment")
 
+submitBtn.addEventListener("click", async function(event) {
+	event.preventDefault();
+	submitSec.setAttribute("style", "display: none;");
 
+	const url = `${workOutApiUrl}time=${time.value}&muscle=${muscle.value}&location=${location.value}&equipment=${equipment.value}`;
+});
 const url = 'https://workout-planner1.p.rapidapi.com/customized?time=30&equipment=dumbbells&muscle=biceps&fitness_level=beginner&fitness_goals=strength';
 // const url = 'https://workout-planner1.p.rapidapi.com/customized?time=30&equipment=dumbbells&muscle=biceps&fitness_level=beginner&fitness_goals=strength';
 
