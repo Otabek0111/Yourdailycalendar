@@ -34,11 +34,6 @@ Food Recipes:
 Select your preferred diet from the provided options (e.g., Gluten-Free, Ketogenic, Vegan, etc.).
 The dashboard will display dietary preferences.
 
-Workouts per Week:
-
-Choose the number of workouts you aim to achieve each week from the dropdown menu.
-Options range from 1 to 7 workouts, accommodating various fitness goals and schedules.
-
 Weather Forecast:
 
 You can choose to display real-time weather forecasts by checking the "Weather Forecast" checkbox.
@@ -51,8 +46,7 @@ Recipes will be scheduled based on the current month, while weather events will 
 Features:
 
 Personalized form to capture user data.
-Dynamic display o dietary preferences.
-Workout schedule selection to plan exercise routines.
+
 Real-time weather forecast with current weather details and 5-day forecast.
 User-friendly interface for seamless navigation and interaction.
 Technologies Used:
