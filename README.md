@@ -37,7 +37,7 @@ The dashboard will display dietary preferences.
 Weather Forecast:
 
 You can choose to display real-time weather forecasts by checking the "Weather Forecast" checkbox.
-The dashboard will show current weather details and a next 7 days forecast for your specified city.
+The dashboard will show current weather details  for your specified city.
 
 Calendar Display:
 
@@ -65,3 +65,4 @@ We extend our gratitude to the developers and contributors of the APIs and libra
 
 
 
+https://tijanihind.github.io/Yourdailycalendar/
