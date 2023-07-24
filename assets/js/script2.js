@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         submitSec.setAttribute("class", "hide");
         let cityName = cityInput.value || "Atlanta";
 
-        fetch(`http://api.positionstack.com/v1/forward?access_key=e0982359ac7c9fae34b81113f22add45&query=${cityName}`)
+        fetch(`https://api.positionstack.com/v1/forward?access_key=e0982359ac7c9fae34b81113f22add45&query=${cityName}`)
             .then(response => response.json())
             .then(geoData => {
                 const latitude = geoData.data[0].latitude;
