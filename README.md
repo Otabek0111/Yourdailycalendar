@@ -1,6 +1,10 @@
 # Yourdailycalendar
 [Project Name] - yourdailycalendar
 
+## Deployment
+
+[Your Daily Calendar](https://otabek0111.github.io/Yourdailycalendar/)
+
 Introduction:
 Welcome to the Weather and Recipe Calendar Dashboard project! This web application aims to provide users with a dynamic calendar that integrates weather forecasts and food recipes based on their preferences and location. With an intuitive user interface and powerful API integrations, this dashboard simplifies daily planning and keeps users informed about upcoming events.
 
@@ -64,5 +68,3 @@ Acknowledgments:
 We extend our gratitude to the developers and contributors of the APIs and libraries used in this project.
 
 
-
-https://tijanihind.github.io/Yourdailycalendar/
