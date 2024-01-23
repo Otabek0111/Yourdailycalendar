@@ -1,5 +1,4 @@
 # Yourdailycalendar
-[Project Name] - yourdailycalendar
 
 ## Deployment
 
